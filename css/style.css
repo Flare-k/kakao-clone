@@ -1,0 +1,29 @@
+/*제일 큰 Default css*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import "reset.css";
+@import "status-bar.css";
+@import "header.css";
+@import "nav-bar.css";
+@import "friend.css";
+@import "friends.css";
+@import "find.css";
+
+*{
+    box-sizing: border-box;
+}/* padding을 추가하면 내부적으로 오히려 추가한 만큼 블록이 더 커지게 된다.
+ 따라서 다음의 과정을 거쳐주면 "padding을 추가하지만 box는 더 크지 않게 해준다" 
+ 그렇지 않으면 content가 화면에서 밀려나게 된다.*/
+
+body{
+    background-color: white;
+    padding: 10px 20px;
+    color: #020202;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;/*Open Sans가 없으면 디폴트 값을 사용한다.*/
+    
+}/*body의 default 값.*/
+
+a {
+    color: inherit;/*부모 요소로 부터 색깔을 받아온다.*/
+    /*링크의 경우 보라색으로 보이는데, 이 작업을 해주면 검은색으로 변한다.*/
+    text-decoration: none;
+}

@@ -1,0 +1,36 @@
+.find .find__header-list{
+    margin-top: 50px;
+    display: flex;/*아이콘 끼리 떨어뜨리기 위해 flex*/
+    justify-content: space-around;
+}
+.find .header-btn{
+    display: flex; /*아이콘을 가운데 정렬시키기 위해 flex*/
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.find .header-btn__title{
+    display: block; /*아이콘과 이름을 수직으로 두기 위해*/
+}
+
+.find .header-btn__title{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.find .header-btn__icon{
+    font-size: 14px;
+}
+
+.find .find__recommended{
+    margin-top: 30px;
+    padding: 15px;
+    border-top: 1px solid #f7f7f7;
+}
+
+.find .find__title{
+    font-size: 12px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
