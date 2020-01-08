@@ -10,6 +10,7 @@
 @import "more.css";
 @import "settings.css";
 @import "chat.css";
+@import "mobile.css";
 
 *{
     box-sizing: border-box;
@@ -29,4 +30,18 @@ a {
     color: inherit;/*부모 요소로 부터 색깔을 받아온다.*/
     /*링크의 경우 보라색으로 보이는데, 이 작업을 해주면 검은색으로 변한다.*/
     text-decoration: none;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+main{
+    animation: fadeIn 0.5s ease-in-out;
 }

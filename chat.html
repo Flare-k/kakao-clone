@@ -9,7 +9,8 @@
     <title>Chat | Kakao Clone</title>
 </head>
 <body class="chats-body">
-    <div class="status-bar">
+    <div class="header-wrapper">
+        <div class="status-bar">
         <div class="status-bar__column">
             <span class="status-bar__clock">13:54</span>
         </div>
@@ -37,9 +38,11 @@
             </span>
         </div>
     </header>
-   <main class="chat">
+    </div>
+    
+   <main class="chat-screen">
        <ul class="chat__messages">
-           <span class="chat__timestamp">Friday, December 11, 2019</span>
+           <span class="chat__timestamp">Friday, January 10, 2020</span>
            <!--수신메시지는 column 3개(프사, 이름및내용, 시간)
             발신메시지는 column 2개(시간, 내용)-->
             <li class="incoming-message message">
@@ -47,13 +50,12 @@
                 <div class="message__content">
                     <span class="message__author">Best Friend</span>
                     <div class="message__bubble">
-                        Contrats I love you!
+                        Congrats I love you!
                     </div>
                 </div>
-                <span class="message__timestamp"></span>
             </li>
 
-            <li class="incoming-message message">
+            <li class="sent-message message">
                 <span class="message__timestamp"></span>
                 <div class="message__content">
                     <div class="message__bubble">
@@ -63,14 +65,14 @@
             </li>
        </ul>
     </main>
-    <div class="chat__write">
-        <div class="chat__write-column">
+    <div class="chat__write-container">
+        <input class="chat__write" type="text" placeholder="Send message" class="chat__write-input">
+        <!--icon전에 input을 두기 위해 먼저 작성.
+        그래야 input에 뭔가가 발생했을때, icon을 숨길 수 있다.-->
+        <div class="chat__icon-left chat__icon">
             <i class="far fa-plus-square"></i>
         </div>
-        <div class="chat__write-column">
-            <input type="text" placeholder="Send message" class="chat__write-input">
-        </div>
-        <div class="chat__write-column">
+        <div class="chat__icon-right chat__icon">
             <span class="chat__write-icon">
                 <i class="far fa-smile-wink"></i>
             </span>
@@ -78,6 +80,9 @@
                 <i class="fas fa-microphone"></i>
             </span>
         </div>
+    </div>
+    <div class="bigScreen">
+        <span class="bigScreen__text">Please make your screen small!</span>
     </div>
 </body>
 </html>
