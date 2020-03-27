@@ -29,7 +29,7 @@
 
 .friend__content .friend__name{
     font-weight: 600;
-    display: block; /*이렇게 하면 bottom-text를 아래고 가게해준다.*/
+    display: block; /*이렇게 하면 bottom-text를 아래로 가게해준다.*/
     margin-bottom: 5px;
 
 }
